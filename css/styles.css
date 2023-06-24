@@ -1,16 +1,18 @@
 /* css styles for homepage */
 
-
 /* mobile view */
-@media (width <= 640px){
-  #container {
+@media (max-width: 639px){
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
 /* tablet + desktop view */
-@media (width > 640px){
+@media (min-width: 640px) {
   body {
-    grid-template-columns: 350px calc(100vw - 350px);
+    /* grid-template-columns: 350px calc(100vw - 350px); */
+    grid-template-columns: 350px 1fr;
     grid-template-rows: 1fr;
     overflow: hidden;
   }
@@ -18,10 +20,11 @@
   #about_me_card {
     grid-column: 1;
     grid-row: 1;
+    overflow: hidden;
   }
 
   #content {
-    overflow-y: auto;
+    overflow: scroll;
     padding: 5px;
     grid-column: 2;
     grid-row: 1;
@@ -39,7 +42,6 @@ body {
   color: var(--white);
   /* font-size: 1.2em; */
 }
-
 
 :root {
   --white: #ffffff;
