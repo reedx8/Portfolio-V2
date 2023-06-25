@@ -17,7 +17,7 @@
     overflow: hidden;
   }
 
-  #about_me_card {
+  #about-me-card {
     grid-column: 1;
     grid-row: 1;
     overflow: hidden;
@@ -28,6 +28,16 @@
     padding: 5px;
     grid-column: 2;
     grid-row: 1;
+  }
+  #floating-menu{
+    background-color: red;
+    padding: 3px;
+    width: 50px;
+    z-index: 100;
+    position: fixed;
+    /* top: 100px; */
+    top: 40vh;
+    right: 30px;
   }
 }
 
