@@ -52,14 +52,14 @@
     border-radius: 30px;
     gap: 20px;
 
-    background-color: var(--black);
+    background-color: var(--black2);
     padding: 24px 0;
     width: 50px;
     z-index: 100;
     position: fixed;
     /* top: 100px; */
-    top: 30vh; /* modify for slightly smaller window heights */
-    right: 30px;
+    top: 30vh; /* TODO: modify for slightly smaller window heights */
+    right: 45px;
 
     text-align: center;
   }
@@ -73,10 +73,14 @@ body {
   font-family: 'Inter', 'sans-serif';
   /* font-family: 'Roboto', sans-serif; */
   scroll-behavior: smooth; /* smooth transitions when links clicked */ 
-  background-color: var(--black);
+  /* background-color: var(--black); */
+  background-color: var(--black2);
+  /* background: linear-gradient(135deg, black, #220033); */
   color: var(--white);
   /* font-size: 1.2em; */
 }
+
+
 
 :root {
   --white: #ffffff;
@@ -89,6 +93,7 @@ body {
 
   --lime: #28e98c;
   --black: #080808;
+  --black2: #1a1a1a;
 
   --teal: #006060;
   --lightteal: #008080;
