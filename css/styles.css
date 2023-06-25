@@ -1,5 +1,20 @@
 /* css styles for homepage */
 
+.material-symbols-outlined {
+  /* font-size: 108px; */
+  /* font-size: 200px; */
+  color: var(--gray); 
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined:hover {
+  color: var(--lime);
+}
+
 /* mobile view */
 @media (max-width: 639px){
   body {
@@ -29,15 +44,24 @@
     grid-column: 2;
     grid-row: 1;
   }
+
   #floating-menu{
-    background-color: red;
-    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+    gap: 20px;
+
+    background-color: var(--black);
+    padding: 24px 0;
     width: 50px;
     z-index: 100;
     position: fixed;
     /* top: 100px; */
-    top: 40vh;
+    top: 30vh; /* modify for slightly smaller window heights */
     right: 30px;
+
+    text-align: center;
   }
 }
 
@@ -46,7 +70,8 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', 'sans-serif';
+  /* font-family: 'Roboto', sans-serif; */
   scroll-behavior: smooth; /* smooth transitions when links clicked */ 
   background-color: var(--black);
   color: var(--white);
@@ -55,12 +80,16 @@ body {
 
 :root {
   --white: #ffffff;
+  /* --gray: #575757; */
+  --gray: #999999;
   --gray1: #333333;
   --gray2: #555555;
   --gray3: #cccccc;
   --gray4: #aaaaaa;
 
+  --lime: #28e98c;
   --black: #080808;
+
   --teal: #006060;
   --lightteal: #008080;
   --purple: #800080;
