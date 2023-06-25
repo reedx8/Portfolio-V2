@@ -15,6 +15,19 @@
   color: var(--lime);
 }
 
+.section-btn {
+  display: flex;
+  border: 1px solid var(--gray);
+  border-radius: 30px;
+  background-color: var(--black2);
+  width: 100px;
+  padding: 0px 0px;
+}
+.section-btn-title {
+  margin: 5px;
+  font-size: 5px;
+}
+
 /* mobile view */
 @media (max-width: 639px){
   body {
