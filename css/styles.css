@@ -11,21 +11,45 @@
   'opsz' 48
 }
 
-.material-symbols-outlined:hover {
+.menu-icon > .material-symbols-outlined:hover {
   color: var(--lime);
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
 .section-btn {
+  /* display: inline-flex; */
   display: flex;
   border: 1px solid var(--gray);
   border-radius: 30px;
   background-color: var(--black2);
-  width: 100px;
-  padding: 0px 0px;
+  height: 30px;
+  width: 110px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+
+  margin-bottom: 53px;
+  /* opacity: 0.8; */
 }
+.section-btn > .material-symbols-outlined {
+  color: var(--lime);
+  font-size: 18px;
+}
+
 .section-btn-title {
-  margin: 5px;
+  margin-left: 5px;
   font-size: 12px;
+}
+
+#intro-section > h1 {
+  font-size: 78px;
+  letter-spacing: -0.2px;
+  line-height: 90px;
+}
+#intro-section > h2 {
+  color: var(--gray);
 }
 
 /* mobile view */
@@ -71,7 +95,7 @@
     z-index: 100;
     position: fixed;
     /* top: 100px; */
-    top: 30vh; /* TODO: modify for slightly smaller window heights */
+    top: 25vh; /* TODO: modify for slightly smaller window heights */
     right: 45px;
 
     text-align: center;
