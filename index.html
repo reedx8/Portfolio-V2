@@ -16,7 +16,13 @@
         <title>Xavier's Portfolio</title>
         <script src="./js/index.js" defer></script>
     </head>
-    <body id="bg">
+    <body>
+        <!-- For Safari only: -->
+        <div id="bg-vid-container"></div>
+
+        <video id="bg-vid" muted autoplay loop>
+            <source src="./images/bg.mp4" type="video/mp4" />
+        </video>
         <nav id="floating-menu">
             <a href="#home" class="menu-icon">
                 <span class="material-symbols-outlined"> home </span>
@@ -37,7 +43,50 @@
                 ><span class="material-symbols-outlined"> mail </span></a
             >
         </nav>
-        <div id="about-me-card">About Me Card</div>
+        <div id="about-me-card">
+            <div id="card">
+                <div id="card-title">
+                    <img
+                        src="./images/xavierText.svg"
+                        alt="Xavier"
+                        id="xavier-text"
+                    />
+                    <p>Full Stack Dev</p>
+                </div>
+                <img
+                    src="./images/avatar.jpg"
+                    alt="Avatar picture"
+                    id="x-pic"
+                />
+                <div id="card-subtitle">
+                    <h2 id="email">xavier@fullstaxdev.com</h2>
+                    <h2 id="location">Based in Portland, OR</h2>
+                </div>
+                <div id="card-icons">
+                    <li>
+                        <a
+                            ><img
+                                src="./images/github.png"
+                                alt="github"
+                                id="github-logo"
+                        /></a>
+                        <a
+                            ><img
+                                src="./images/linkedin.png"
+                                alt="linkedin"
+                                id="linkedin-logo"
+                        /></a>
+                        <a
+                            ><img
+                                src="./images/twitter2.png"
+                                alt="twitter"
+                                id="twitter-logo"
+                        /></a>
+                    </li>
+                </div>
+                <button></button>
+            </div>
+        </div>
         <div id="content">
             <section id="intro-section">
                 <div class="section-btn">
