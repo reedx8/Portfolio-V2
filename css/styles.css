@@ -86,19 +86,29 @@
 }
 #card-subtitle > #email, #card-subtitle > #location {
   text-align: center;
+  font-size: 17px;
+}
+
+#card-icons {
+  text-align: center;
+  list-style: none;
 }
 #card-icons > li > a {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+  text-decoration: none;
+}
+
+.card-logo {
   text-align: center;
-  border: 2px solid var(--gray2);
+  border: 1.5px solid var(--gray);
   border-radius: 50%;
   color: var(--gray);
   margin: 5px;
-  /* font-size */
+  padding: 10px;
+  font-size: 25px;
+  /* -moz-osx-font-smoothing: grayscale; */
 }
-#card-icons > li > a:hover {
+
+.card-logo:hover {
   border-color: var(--lime);
   color: var(--lime);
 
@@ -107,15 +117,6 @@
   transition-timing-function: ease;
   transition-delay: 0s;
 
-}
-#card-icons > li {
-  list-style: none;
-  text-align: center;
-}
-#github-logo, #linkedin-logo, #twitter-logo {
-  height: 50px;
-  width: 50px;
-  color: var(--lime);
 }
 
 /* mobile view */
