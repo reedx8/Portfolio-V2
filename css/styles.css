@@ -588,11 +588,13 @@ portfolio section
 
 .widget {
   width: 100%;
-  max-width: 430px;
+  /* max-width: 430px; */
+  max-width: 400px;
   height: 452px;
   /* border: 1px solid #cccccc; */
   border: 1px solid var(--gray);
   background-color: #ffffff;
+  opacity: 0.85;
   /* background-color: transparent; */
   /* border-radius: 4px; */
   border-radius: 30px;
@@ -604,8 +606,10 @@ portfolio section
 
 .widget__photo {
   width: 100%;
-  height: 300px;
-  background: url('https://media.blogto.com/articles/2018290sb-reservebar.jpg?cmd=resize_then_crop&quality=70&w=2048&height=1365') no-repeat center / cover;
+  /* height: 300px; */
+  /* background: url('https://media.blogto.com/articles/2018290sb-reservebar.jpg?cmd=resize_then_crop&quality=70&w=2048&height=1365') no-repeat center / cover; */
+  height: 200px;
+  background: url('../images/moviedash.png');
   transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
   transform: scale(1);
@@ -654,7 +658,7 @@ portfolio section
 }
 
 .widget__name {
-  font-size: 18px;
+  font-size: 28px;
   color: #333333;
   font-weight: 600;
   width: 100%;
@@ -664,6 +668,7 @@ portfolio section
 .widget__type {
   font-size: 12px;
   color: #666666;
+  /* color: var(--lime); */
 }
 
 .widget__info span {
@@ -696,8 +701,8 @@ portfolio section
   opacity: 0;
   position: absolute;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.6); */
-  background-color: var(--black);
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: var(--black); */
 }
 
 .widget__button {
