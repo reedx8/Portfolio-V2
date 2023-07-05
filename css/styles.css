@@ -572,12 +572,10 @@ portfolio section
 
 */
 
-/* @import "bourbon"; */
-
-
 .wrapper {
   /* position: absolute; */
   display: flex;
+  gap: 10px;
   /* align-items: center; */
   /* justify-content: center; */
   height: 100%;
@@ -589,7 +587,7 @@ portfolio section
 .widget {
   width: 100%;
   /* max-width: 430px; */
-  max-width: 400px;
+  max-width: 350px;
   height: 452px;
   /* border: 1px solid #cccccc; */
   border: 1px solid var(--gray);
@@ -609,10 +607,17 @@ portfolio section
   /* height: 300px; */
   /* background: url('https://media.blogto.com/articles/2018290sb-reservebar.jpg?cmd=resize_then_crop&quality=70&w=2048&height=1365') no-repeat center / cover; */
   height: 200px;
-  background: url('../images/moviedash.png');
+  /* background: url('../images/moviedash.png'); */
   transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
   transform: scale(1);
+}
+.moviedash-pic {
+  background: url('../images/moviedash.png');
+}
+
+.nutriv3-pic {
+  background: url('../images/nutriv3-2.png');
 }
 
 .widget__photo:after {
@@ -638,6 +643,7 @@ portfolio section
   position: absolute;
   right: 30px;
   top: 30px;
+  text-decoration: none !important;
 }
 
 .widget__badge {
@@ -647,14 +653,26 @@ portfolio section
   color: #808080;
   width: 40px;
   text-align: center;
-  padding: 2px 0;
+  /* padding: 2px 0; */
+  padding-top: 5px;
   border-radius: 3px;
+  text-decoration: none !important;
 }
 
 .widget__badge.widget__badge--rating {
   background-color: var(--lime);
   border-color: var(--lime);
   color: #ffffff;
+  
+}
+
+.gh-link {
+  color: inherit;
+}
+
+.gh-icon-portfolio {
+  font-size: 22px !important;
+  margin: 0;
 }
 
 .widget__name {
@@ -689,7 +707,8 @@ portfolio section
 
 .widget__table tr td {
   color: #777777;
-  line-height: 25px;
+  /* line-height: 25px; */
+  line-height: 20px;
 }
 
 .widget__table tr td:first-child {
