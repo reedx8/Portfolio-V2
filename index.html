@@ -457,7 +457,11 @@
                 <h1>
                     Lets Work <span style="color: var(--lime)">Together</span>
                 </h1>
-                <form id="contact-form">
+                <form
+                    id="contact-form"
+                    action="https://formsubmit.co/xavier@fullstaxdev.com"
+                    method="POST"
+                >
                     <!-- <label id="name-container" for="name"> -->
                     <!-- <p class="input-heading">Name <sup>*</sup></p> -->
                     <!-- <input
@@ -471,7 +475,12 @@
                         /> -->
                     <!-- </label> -->
                     <div class="wave-group">
-                        <input required type="text" class="input" />
+                        <input
+                            required
+                            type="text"
+                            class="input"
+                            name="first-last-name"
+                        />
                         <span class="bar"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">N</span>
@@ -503,7 +512,12 @@
                         />
                     </label> -->
                     <div class="wave-group">
-                        <input required type="email" class="input" />
+                        <input
+                            required
+                            type="email"
+                            class="input"
+                            name="email"
+                        />
                         <span class="bar"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">E</span>
@@ -535,7 +549,12 @@
                         />
                     </label> -->
                     <div class="wave-group">
-                        <input required type="text" class="input" />
+                        <input
+                            required
+                            type="text"
+                            class="input"
+                            name="phone"
+                        />
                         <span class="bar"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">P</span>
@@ -588,11 +607,15 @@
                         </p>
                         <select id="subject" name="subject">
                             <option value="Select a subject"></option>
-                            <option value="website">Develop website</option>
-                            <option value="sql">SQL/Backend</option>
-                            <option value="mobile">Develop mobile app</option>
-                            <option value="it">IT tech</option>
-                            <option value="other">Other</option>
+                            <option value="Develop website">
+                                Develop website
+                            </option>
+                            <option value="SQL or Backend">SQL/Backend</option>
+                            <option value="Mobile app">
+                                Develop mobile app
+                            </option>
+                            <option value="IT Tech">IT tech</option>
+                            <option value="Other">Other</option>
                         </select>
                     </label>
                     <!-- <label id="budget-container" for="budget">
@@ -606,7 +629,12 @@
                         />
                     </label> -->
                     <div class="wave-group budget-container">
-                        <input required type="text" class="input" />
+                        <input
+                            required
+                            type="text"
+                            class="input"
+                            name="budget"
+                        />
                         <span class="bar budget"></span>
                         <label class="label">
                             <span class="label-char" style="--index: 0">B</span>
