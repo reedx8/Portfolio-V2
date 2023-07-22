@@ -147,6 +147,12 @@ intro section + about me card
   transition-delay: 0s;
 }
 
+.mobile-sidebar-menu {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
 /*
 responsiveness
 */
@@ -204,6 +210,7 @@ responsiveness
   opacity: 1;
   visibility: visible;
   z-index: 100;
+  display: unset; /* unsets display: none; in general scope */
 }
 
 .mobile-sidebar-menu {
@@ -234,6 +241,17 @@ responsiveness
   z-index: -1;
   background: var(--black);
   opacity: 0.6;
+}
+
+.mobile-menu-items {
+  /* opacity: 0; */
+  /* visibility: hidden; */
+}
+.mobile-menu-items.active{
+  /* opacity: 1; */
+  /* visibility: visible; */
+  width: 46%;
+  margin: auto;
 }
 }
 

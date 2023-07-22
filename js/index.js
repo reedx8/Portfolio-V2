@@ -14,6 +14,9 @@ $(function(){
         $(document).on('click', '.mobile-sidebar-menu #onclick-overlay', function() {
             $('.mobile-sidebar-menu').removeClass('active');
         });
+        $(document).on('click', '#mobile-menu', function() {
+            $('.mobile-menu-items').addClass('active');
+        });
 
         $(document).on('click', '.menu li .scroll-to', function() {
             $('.mobile-sidebar-menu').removeClass('active');
