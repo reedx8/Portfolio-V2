@@ -7,7 +7,6 @@
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
         <!-- font -->
         <style>
-            /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
         </style>
         <!-- icons -->
@@ -20,6 +19,7 @@
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         />
         <title>Xavier's Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="./js/index.js" defer></script>
     </head>
     <body>
@@ -29,6 +29,14 @@
         <video id="bg-vid" muted autoplay loop preload="auto">
             <source src="./images/bg2.mp4" type="video/mp4" />
         </video>
+        <span id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </span>
+        <div class="mobile-sidebar-menu">
+            <div id="onclick-overlay"></div>
+            <div class="mobile-sidebar-inner"></div>
+        </div>
         <nav id="floating-menu">
             <a
                 href="#home"

@@ -30,6 +30,13 @@ navbar
   /* padding: 0; */
 }
 
+/*
+mobile navbar
+*/
+#mobile-menu {
+
+}
+
 /* 
 the small black titles that start each section 
 */
@@ -161,6 +168,73 @@ responsiveness
     flex-direction: column;
     align-items: center;
   }
+
+  #floating-menu {
+    display: none;
+  }
+  
+  #mobile-menu{
+    position: fixed;
+    background: var(--black);
+    right: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--gray);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    /* transition: .3s; */
+    z-index: 100;
+}
+
+.bar {
+    width: 20px;
+    height: 1.5px;
+    display: block;
+    background: var(--white);
+    transition: .3s;
+} 
+.mobile-sidebar-menu.active{
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+
+.mobile-sidebar-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 100; */
+  transition: .2s;
+}
+.mobile-sidebar-menu.active > .mobile-sidebar-inner {
+  max-width: 345px;
+  width: 100%;
+  margin-left: auto;
+  background: var(--black);
+  height: 100%;
+  padding-top: 50px;
+  transition: .3s;
+  /* z-index: 110; */
+}
+.mobile-sidebar-menu.active > #onclick-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--black);
+  opacity: 0.6;
+}
 }
 
 /* tablet view */
@@ -177,6 +251,25 @@ responsiveness
 
   #xavier-text {
     width: 200px;
+  }
+
+  #floating-menu{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+    gap: 20px;
+
+    background-color: var(--black2);
+    padding: 24px 0;
+    width: 50px;
+    z-index: 100;
+    position: fixed;
+    /* top: 100px; */
+    top: 25vh; /* TODO: modify for slightly smaller window heights */
+    right: 45px;
+
+    text-align: center;
   }
 }
 
@@ -816,9 +909,3 @@ portfolio section
   visibility: visible;
   opacity: 1;
 }
-
-
-
-
-
-
