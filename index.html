@@ -38,14 +38,61 @@
             <div class="mobile-sidebar-inner">
                 <div class="mobile-menu-items">
                     <p>Menu</p>
-                    <ul>
+                    <ul class="list-items">
                         <li>
-                            <a><i></i> <span>Home</span></a>
-                            <a><i></i> <span>About</span></a>
-                            <a><i></i> <span>Services</span></a>
-                            <a><i></i> <span>Skills</span></a>
-                            <a><i></i> <span>Portfolio</span></a>
-                            <a><i></i> <span>Contact</span></a>
+                            <a
+                                href="#home"
+                                class="icon"
+                                onclick="document.getElementById('intro-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    home
+                                </span>
+                                <span>Home</span>
+                            </a>
+                            <a
+                                href="#about"
+                                class="icon"
+                                onclick="document.getElementById('about-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    person
+                                </span>
+                                <span>About</span></a
+                            >
+                            <a
+                                href="#services"
+                                class="icon"
+                                onclick="document.getElementById('services-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    business_center
+                                </span>
+                                <span>Services</span></a
+                            >
+                            <a
+                                href="#skills"
+                                class="icon"
+                                onclick="document.getElementById('skills-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    code_blocks </span
+                                ><span>Skills</span></a
+                            >
+                            <a
+                                href="#portfolio"
+                                class="icon"
+                                onclick="document.getElementById('portfolio-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    browse
+                                </span>
+                                <span>Portfolio</span></a
+                            >
+                            <a
+                                href="#contact"
+                                class="icon"
+                                onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                                <span>Contact</span></a
+                            >
                         </li>
                     </ul>
                 </div>

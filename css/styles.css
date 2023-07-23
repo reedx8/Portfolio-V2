@@ -240,18 +240,32 @@ responsiveness
   height: 100%;
   z-index: -1;
   background: var(--black);
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .mobile-menu-items {
   /* opacity: 0; */
   /* visibility: hidden; */
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 .mobile-menu-items.active{
   /* opacity: 1; */
   /* visibility: visible; */
   width: 46%;
   margin: auto;
+}
+.mobile-menu-items > .list-items{
+  list-style-type: none;
+}
+.list-items > li > .icon {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+.list-items > li > a {
+  /* text-decoration: none; */
+  /* color: var(--white); */
 }
 }
 
