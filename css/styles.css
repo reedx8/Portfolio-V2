@@ -258,15 +258,54 @@ responsiveness
 .mobile-menu-items > .list-items{
   list-style-type: none;
 }
+.list-items {
+  padding: 0;
+  margin: 0;
+}
+.list-items li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list-items > li > a > .material-symbols-outlined {
+  font-size: 17px;
+  line-height: 1;
+}
+.list-items > li > a > .icon-text {
+  font-size: 16px;
+  line-height: 1;
+}
+.mobile-menu-items p, .list-items .icon-text {
+  color: var(--gray);
+}
+.mobile-menu-items p {
+  font-size: 19px;
+}
+
+.list-items .icon-text:hover {
+  color: var(--white);
+}
+.icon .material-symbols-outlined {
+  color: var(--lime);
+  margin: 0;
+  padding: 0;
+}
+
 .list-items > li > .icon {
   text-decoration: none;
   display: block;
-  color: white;
+  /* color: white; */
 }
 .list-items > li > a {
-  /* text-decoration: none; */
-  /* color: var(--white); */
+  margin: 10px;
 }
+#social-mobile-menu > li {
+  list-style-type: none;
+}
+#social-mobile-menu > li > a > i{
+  font-size: 15px;
+}
+
 }
 
 /* tablet view */
