@@ -30,13 +30,6 @@ navbar
   /* padding: 0; */
 }
 
-/*
-mobile navbar
-*/
-#mobile-menu {
-
-}
-
 /* 
 the small black titles that start each section 
 */
@@ -243,12 +236,6 @@ responsiveness
   opacity: 0.4;
 }
 
-.mobile-menu-items {
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  /* display: flex; */
-  /* flex-direction: column; */
-}
 .mobile-menu-items.active{
   /* opacity: 1; */
   /* visibility: visible; */
