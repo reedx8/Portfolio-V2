@@ -7,7 +7,6 @@
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
         <!-- font -->
         <style>
-            /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
         </style>
         <!-- icons -->
@@ -20,6 +19,7 @@
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         />
         <title>Xavier's Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="./js/index.js" defer></script>
     </head>
     <body>
@@ -29,6 +29,94 @@
         <video id="bg-vid" muted autoplay loop preload="auto">
             <source src="./images/bg2.mp4" type="video/mp4" />
         </video>
+        <span id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </span>
+        <div class="mobile-sidebar-menu">
+            <div id="onclick-overlay"></div>
+            <div class="mobile-sidebar-inner">
+                <div class="mobile-menu-items">
+                    <p>Menu</p>
+                    <ul class="list-items">
+                        <li>
+                            <a
+                                href="#home"
+                                class="icon"
+                                onclick="document.getElementById('intro-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    home
+                                </span>
+                                <span class="icon-text">Home</span>
+                            </a>
+                            <a
+                                href="#about"
+                                class="icon"
+                                onclick="document.getElementById('about-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    person
+                                </span>
+                                <span class="icon-text">About</span></a
+                            >
+                            <a
+                                href="#services"
+                                class="icon"
+                                onclick="document.getElementById('services-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    business_center
+                                </span>
+                                <span class="icon-text">Services</span></a
+                            >
+                            <a
+                                href="#skills"
+                                class="icon"
+                                onclick="document.getElementById('skills-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    code_blocks </span
+                                ><span class="icon-text">Skills</span></a
+                            >
+                            <a
+                                href="#portfolio"
+                                class="icon"
+                                onclick="document.getElementById('portfolio-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    browse
+                                </span>
+                                <span class="icon-text">Portfolio</span></a
+                            >
+                            <a
+                                href="#contact"
+                                class="icon"
+                                onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})"
+                                ><span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                                <span class="icon-text">Contact</span></a
+                            >
+                        </li>
+                    </ul>
+                    <p>Social</p>
+                    <div id="social-mobile-menu">
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/xreed/"
+                                target="_blank"
+                                title="Linkedin profile"
+                            >
+                                <i class="lab la-linkedin card-logo"></i>
+                            </a>
+                            <a
+                                href="https://twitter.com/thefullstaxdev"
+                                target="_blank"
+                                title="Twitter profile"
+                            >
+                                <i class="lab la-twitter card-logo"></i>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav id="floating-menu">
             <a
                 href="#home"
