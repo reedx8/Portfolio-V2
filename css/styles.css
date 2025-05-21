@@ -646,6 +646,15 @@ body {
 .urbanliving-pic {
     background: url(../images/urbanliving.png);
 }
+.ims-pic {
+    background: url(../images/bakery.png);
+}
+.ares-pic {
+    background: url(../images/ares.jpeg);
+}
+.forecast-pic {
+    background: url(../images/ml.jpg);
+}
 .widget__photo:after {
     transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     content: '';
